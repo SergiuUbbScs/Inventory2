@@ -1,0 +1,17 @@
+
+R
+java:S3655b"5Call "result.isPresent()" before accessing the value.(ÃÇûÞ8ŸÉ®µð1
+x
+java:S1450"[Remove the "errorMessage" field and declare it as a local variable in the relevant methods.(ÊÃ‘æ8¢É®µð1
+q
+java:S1450"TRemove the "scene" field and declare it as a local variable in the relevant methods.(‹ôÒ¡8¢É®µð1
+v
+java:S1450"TRemove the "stage" field and declare it as a local variable in the relevant methods.(‹ðÑœýÿÿÿÿ8¢É®µð1
+=
+java:S2129" Remove this "String" constructor(ÊÃ‘æ8¥É®µð1
+X	java:S125L"<This block of commented-out lines of code should be removed.( ÆüÖ8­É®µð1
+L	java:S106c"+Replace this use of System.out by a logger.(©²²éúÿÿÿÿ8¸É®µð1
+G	java:S106f"+Replace this use of System.out by a logger.(¤Õï«8¹É®µð1
+J
+java:S1125™"'Remove the unnecessary boolean literal.(ÿÂóéüÿÿÿÿ8¾É®µð1
+M	java:S106¢"+Replace this use of System.out by a logger.(Éâ…ºýÿÿÿÿ8ÀÉ®µð1
