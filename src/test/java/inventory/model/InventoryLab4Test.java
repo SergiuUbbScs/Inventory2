@@ -3,6 +3,7 @@ package inventory.model;
 import javafx.collections.ObservableList;
 //import org.junit.Before;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -12,26 +13,29 @@ public class InventoryLab4Test {
 
     @BeforeEach
     @Test
-    public void setUp() {
+    void setUp() {
         inventory = new Inventory();
     }
 
     @Test
-    public void testGetAllParts() {
+    @Tag("testGetAllParts")
+    void testGetAllParts() {
         ObservableList<Part> parts = inventory.getAllParts();
         assertNotNull(parts);
         assertEquals(0, parts.size());
     }
 
     @Test
-    public void testGetAllProducts() {
+    @Tag("testGetAllProducts")
+    void testGetAllProducts() {
         ObservableList<Product> products = inventory.getProducts();
         assertNotNull(products);
         assertEquals(0, products.size());
     }
 
     @Test
-    public void testAddProduct() {
+    @Tag("testAddProduct")
+    void testAddProduct() {
         int initialSize = inventory.getProducts().size();
         Product product = new Product(1, "Test Product", 19.99, 5, 1, 10, null);
         inventory.addProduct(product);
@@ -40,7 +44,8 @@ public class InventoryLab4Test {
     }
 
     @Test
-    public void testAddPart() {
+    @Tag("testAddPart")
+    void testAddPart() {
         int initialSize = inventory.getAllParts().size();
         InhousePart part = new InhousePart(1, "Test Part", 19.99, 5, 1, 10, 1);
         inventory.addPart(part);

@@ -7,6 +7,7 @@ import inventory.service.InventoryService;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
@@ -31,7 +32,8 @@ public class InventoryRepositoryLab4IntegrationTest {
     }
 
     @Test
-    public void testAddPart() {
+    @Tag("testAddPart")
+    void testAddPart() {
         Part part = new InhousePart(1, "Test Part", 19.99, 5, 1, 10, 123);
         inventory.addPart(part);
         inventoryRepository = new InventoryRepository(inventory);
@@ -41,7 +43,8 @@ public class InventoryRepositoryLab4IntegrationTest {
     }
 
     @Test
-    public void testGetAllParts() {
+    @Tag("testGetAllParts")
+    void testGetAllParts() {
         Part part = new InhousePart(1, "Test Part", 19.99, 5, 1, 10, 123);
         inventory.addPart(part);
         inventoryRepository = new InventoryRepository(inventory);

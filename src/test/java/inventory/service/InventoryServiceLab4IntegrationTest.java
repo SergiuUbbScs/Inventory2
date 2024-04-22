@@ -7,6 +7,7 @@ import inventory.repository.InventoryRepository;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
@@ -34,7 +35,8 @@ public class InventoryServiceLab4IntegrationTest {
 
     // This test method checks if a part can be added to the repository
     @Test
-    public void testAddPart() {
+    @Tag("testAddPart")
+    void testAddPart() {
         // Create a test part object
         Part part = new InhousePart(1, "Test Part", 19.99, 5, 1, 10, 123);
         // Call the addPart method of the repository with the test part object
@@ -55,7 +57,8 @@ public class InventoryServiceLab4IntegrationTest {
 
     // This test method checks if a product can be added to the repository
     @Test
-    public void testAddProduct() {
+    @Tag("testAddProduct")
+    void testAddProduct() {
         // Create a test part object and a test product object with the part as a component
         List<Part> parts = Arrays.asList(new InhousePart(1, "Test Part", 19.99, 5, 1, 10, 123));
         Product product = new Product(1, "Test Product", 19.99, 5, 1, 10, FXCollections.observableArrayList(parts));
@@ -76,7 +79,8 @@ public class InventoryServiceLab4IntegrationTest {
 
     // This test method checks if the getAllParts method of the repository returns a non-empty list
     @Test
-    public void testGetAllParts() {
+    @Tag("testGetAllParts")
+    void testGetAllParts() {
         // Create a test part object and add it to the repository
         Part part = new InhousePart(1, "Test Part", 19.99, 5, 1, 10, 123);
         ObservableList<Part> parts = FXCollections.observableArrayList(part);
